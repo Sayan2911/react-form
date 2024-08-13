@@ -9,6 +9,7 @@ import {Routes,Route, BrowserRouter} from "react-router-dom"
 import store from './pages/redux/store';
 
 import { Provider } from'react-redux';
+import UpdateForm from './pages/UpdateForm';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route  path="/" element={<Form/>} />
               <Route path="/thankYou"element={ <ThankYou/>} />
               <Route path="/data"element={ <Data/>} />
+              <Route path="/update"element={ <UpdateForm/>} />
  </Routes>
           </BrowserRouter>
      </Provider>

@@ -7,10 +7,10 @@ import { useSelector } from 'react-redux';
 import Cards from './Cards';
 import "./main.css"
 const ThankYou = () => {
-    const fname = useSelector(state => state.data.firstName);
+   
     const allUser = useSelector(state => state.data.allUser);
     const navigate=useNavigate()
-    console.log(fname);
+
     console.log(allUser); 
   
     
@@ -42,7 +42,7 @@ const newForm=()=>{
         <Cards
           key={index}
           fname={user.firstName}
-          mname={user.middleName}
+          mname={user.middleName}                  
           lname={user.lastName}
           ph={user.phoneNumber}
         />

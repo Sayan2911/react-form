@@ -1,17 +1,17 @@
 .main-card{
     position: relative;
     background-color: rgba(124, 124, 124, 0.5);
-    height: 40vh;
-    width: 15vw;
+    height: 45vh;
+    width: 18vw;
     top: 5vh;
     left: 4vw;
     border-radius: 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content: space-around;
     flex-direction: column;
     border: 2px solid white;
- 
+    /* padding: 50px 0px; */
 }
 .details{
     display: flex;
@@ -56,3 +56,16 @@
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #555;
 }
+
+
+/* progeress bar */
+
+.container {
+    background-color: rgba(255, 255, 255, 0.698);
+    border-radius: 15px;
+  }
+  
+  .barCompleted {
+    background-color: rgba(141, 255, 1, 0.856);
+    width: 80%;
+  }

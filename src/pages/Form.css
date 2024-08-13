@@ -22,7 +22,7 @@ img{
     background-color: rgba(159, 157, 157, 0.278);
     border-radius: 15px;
     padding: 35px;
-    padding-top:10rem;
+    /* padding-top:10rem; */
     border: 2px solid white;
     display: flex;
     align-items: center;
