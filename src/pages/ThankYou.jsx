@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Form.css"
-import image from "../images/bgImg.jpg"
+import bgimage from "../images/bgImg.jpg"
 import add from "../images/add.png"
 import {  useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -32,12 +32,12 @@ const newForm=()=>{
     
     <div className='mainDiv'>
       <div className="test">
-          <img src={image} alt="" />
+          <img src={bgimage} alt="" />
           
       </div>
-   
-
-      <div className='main-card-cont' id="style-1">
+   {
+(allUser.length!==0)?
+     ( <div className='main-card-cont' id="style-1">
       {allUser.map((user, index) => (
         <Cards
           key={index}
@@ -45,12 +45,21 @@ const newForm=()=>{
           mname={user.middleName}                  
           lname={user.lastName}
           ph={user.phoneNumber}
+          email={user.email}
+          bio={user.bio}
+          image= {user.image}
+          country= {user.country}
+          pdf= {user.pdf}
+          doc= {user.doc}
+          skills={user.skills}
         />
       ))}
       <img src={add} alt="" style={{width:"50px",height:"50px",position:"relative" ,top:"150px" ,left:"140px"}} onClick={()=>(newForm())}/>
-    </div>
+    </div>):(
+      <div className='main-card-cont d-flex align-items-center justify-content-center' ><h1>no data found</h1></div>
+    )
             
-
+}
 
 
 

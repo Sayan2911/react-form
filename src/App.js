@@ -1,6 +1,6 @@
 
 import './App.css';
-import Data from './pages/Data';
+
 import Form from './pages/Form';
 import ThankYou from './pages/ThankYou';
 import {Routes,Route, BrowserRouter} from "react-router-dom"
@@ -10,6 +10,7 @@ import store from './pages/redux/store';
 
 import { Provider } from'react-redux';
 import UpdateForm from './pages/UpdateForm';
+import View from './pages/View';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
             <Routes>
               <Route  path="/" element={<Form/>} />
               <Route path="/thankYou"element={ <ThankYou/>} />
-              <Route path="/data"element={ <Data/>} />
+
               <Route path="/update"element={ <UpdateForm/>} />
+              <Route path="/view"element={ <View/>} />
  </Routes>
           </BrowserRouter>
      </Provider>

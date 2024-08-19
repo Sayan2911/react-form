@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 
 
 import { useDispatch } from 'react-redux';
-import {firstName,allUser }from './redux/action'
+import {allUser }from './redux/action'
 const Form = () => {
     const navigate=useNavigate()
     const dispatch = useDispatch();
@@ -26,8 +26,7 @@ const Form = () => {
                 lastName: e.target.lastName.value,
                 phoneNumber: value, // PhoneInput's value
                 email: e.target.email.value,
-                // image: e.target.image.value,
-                // country: e.target.country.value,
+
             };
             // dispatch(firstName(formData.firstName))
             dispatch(allUser(formData))
@@ -51,7 +50,7 @@ const Form = () => {
                         <input name="middleName" type="text" placeholder='middle name'  maxLength = "15" />
                         <input name="lastName" type="text" placeholder='last name'  maxLength = "15"/>
                         <input name="email" type="text" placeholder='email'  maxLength = "15"/>
-                        {/* <input name="country" type="text" placeholder='country'  maxLength = "15" /> */}
+
                         
                  
                         <PhoneInput

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 .mainDiv{
    display: flex;
    align-items: center;
@@ -25,28 +25,68 @@ img{
     /* padding-top:10rem; */
     border: 2px solid white;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: start;
     flex-direction: column;
     overflow:scroll;
     overflow-x: hidden;
+    
 }
 form{
+
   /* margin-top: 5rem; */
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
 }
 
-input{
-    background-color: rgba(138, 138, 138, 0.479);
-    border-radius: 15px;
-    border: 1px solid white;
+h4{
+    /* background-color: rgba(255, 248, 248, 0.718); */
+    border-radius: 5px;
+ 
     margin: 1vh;
-    color: white;
-    padding: 8px;
+    color: rgb(255, 255, 255);
+    font-family: "Titillium Web", sans-serif;
     width: 100%;
+    border: 1px solid white;
+    padding: 8px;
+    height: max-content;
+}
+.bio{
+  border-radius: 5px;
+ 
+  margin: 1vh;
+  color: rgb(255, 255, 255);
+  font-family: "Titillium Web", sans-serif;
+  width: 100%;
+  border: 1px solid white;
+  padding: 8px;
+  height: max-content;
+  overflow-wrap:break-word;
+
+}
+label{
+  position: relative;
+  top: 20px;
+  left: 15px;
+padding: 3px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color:#464F5A;
+  color: white;
+}
+.city{
+  font-size: 15px;
+}
+button{
+  background-color: rgba(138, 138, 138, 0.479);
+  border-radius: 15px;
+  border: 1px solid white;
+  margin: 1vh;
+  color: black;
+  padding: 8px;
+  width: 100%;
 }
 textarea{
   background-color: rgba(138, 138, 138, 0.479);
@@ -64,8 +104,49 @@ textarea:focus, input:focus{
     color: rgba(75, 75, 75, 0.827);
     opacity: 1; /* Firefox */
   }
+.skill-div{
+  display: flex;
+  gap: 20px;
+  overflow-wrap: break-word;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
+  width: 100%;
+  border: 1px solid white ;
+  padding: 15px; 
+  padding-top: 25px;
+  border-radius: 15px;
+}
 
+.doc-div{
+  display: flex;
+  gap: 20px;
+  overflow-wrap: break-word;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
+  width: 100%;
+  border: 1px solid white ;
+  padding: 15px;
+  padding-top: 25px;
+  border-radius: 15px;
+}
 
+.skill-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: auto; /* Adjust the width based on the content */
+  display: flex;
+  align-items: center;
+  word-break: break-word; /* Handle long skill names */
+  white-space: nowrap;
+  max-width: max-content; /* Prevent text from breaking to the next line within each skill */
+}
 
   #style-1::-webkit-scrollbar-track
 {
@@ -75,6 +156,18 @@ textarea:focus, input:focus{
  
 }
 
+.total-form{
+  height: 80%;
+  width:100%;
+}
+
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh;
+}
 #style-1::-webkit-scrollbar
 {
   border-radius: 15px;
@@ -91,42 +184,11 @@ textarea:focus, input:focus{
 }
 
 /* button style  */
-.file-upload-icon{
-  position: relative;
-  top: 0;
-  margin-bottom: 20px;
-}
-.skills-list {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
-  width: 100%; /* Adjust width to fill the container */
-}
 
-.skills-section {
-  overflow-wrap: break-word;
-  height: max-content;
-  width: 100%;
-}
 
-.skill-item {
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  width: auto; /* Adjust the width based on the content */
-  display: flex;
-  align-items: center;
-  word-break: break-word; /* Handle long skill names */
-  white-space: nowrap; /* Prevent text from breaking to the next line within each skill */
-}
-/* span{
-  margin-right : 10px;
-} */
 /* CSS */
 .button-17 {
-  position: relative;
-  top: 35px;
-
+    margin-top: 15px;
   align-items: center;
   appearance: none;
   background-color: #fff;
