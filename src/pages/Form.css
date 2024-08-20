@@ -119,6 +119,31 @@ textarea:focus, input:focus{
   word-break: break-word; /* Handle long skill names */
   white-space: nowrap; /* Prevent text from breaking to the next line within each skill */
 }
+.allfile-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
+  width: 100%; /* Adjust width to fill the container */
+}
+
+.allfile-section {
+  overflow-wrap: break-word;
+  height: max-content;
+  width: 100%;
+  /* display: none; */
+}
+
+.allfile-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: auto; /* Adjust the width based on the content */
+  display: flex;
+  align-items: center;
+  word-break: break-word; /* Handle long skill names */
+  white-space: nowrap;
+   /* Prevent text from breaking to the next line within each skill */
+}
 /* span{
   margin-right : 10px;
 } */
@@ -202,3 +227,6 @@ p{
   font-size: 9vh;
   text-align: center;
 }
+
+
+

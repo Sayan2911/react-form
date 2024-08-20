@@ -46,10 +46,10 @@ const Form = () => {
     <form onSubmit={(e)=>(logging(e))}>
                      
                    
-                        <input name="firstName" type="text" placeholder='first name'  maxLength = "15"/>
-                        <input name="middleName" type="text" placeholder='middle name'  maxLength = "15" />
-                        <input name="lastName" type="text" placeholder='last name'  maxLength = "15"/>
-                        <input name="email" type="text" placeholder='email'  maxLength = "15"/>
+                        <input name="firstName" type="text" placeholder='first name'  maxLength = "15" required/>
+                        <input name="middleName" type="text" placeholder='middle name'  maxLength = "15" required />
+                        <input name="lastName" type="text" placeholder='last name'  maxLength = "15" required/>
+                        <input name="email" type="text" placeholder='email'  maxLength = "15" required/>
 
                         
                  
@@ -57,7 +57,8 @@ const Form = () => {
                         placeholder="Enter phone number"
                         value={value}
                         onChange={setValue}
-                        maxLength = "15"/>
+                        maxLength = "15"
+                        required/>
 
                     
        

@@ -104,21 +104,7 @@ textarea:focus, input:focus{
     color: rgba(75, 75, 75, 0.827);
     opacity: 1; /* Firefox */
   }
-.skill-div{
-  display: flex;
-  gap: 20px;
-  overflow-wrap: break-word;
-  height: max-content;
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
-  width: 100%;
-  border: 1px solid white ;
-  padding: 15px; 
-  padding-top: 25px;
-  border-radius: 15px;
-}
+
 
 .doc-div{
   display: flex;
@@ -135,7 +121,47 @@ textarea:focus, input:focus{
   padding-top: 25px;
   border-radius: 15px;
 }
-
+.skill-div{
+  display: flex;
+  gap: 20px;
+  overflow-wrap: break-word;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
+  width: 100%;
+  border: 1px solid white ;
+  padding: 15px; 
+  padding-top: 25px;
+  border-radius: 15px;
+}
+.skill-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: auto; /* Adjust the width based on the content */
+  display: flex;
+  align-items: center;
+  word-break: break-word; /* Handle long skill names */
+  white-space: nowrap;
+  max-width: max-content; /* Prevent text from breaking to the next line within each skill */
+}
+.skill-div{
+  display: flex;
+  gap: 20px;
+  overflow-wrap: break-word;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Allow the skills to wrap if they exceed the container's width */
+  width: 100%;
+  border: 1px solid white ;
+  padding: 15px; 
+  padding-top: 25px;
+  border-radius: 15px;
+}
 .skill-item {
   background-color: white;
   padding: 10px;

@@ -52,6 +52,7 @@ const newForm=()=>{
           pdf= {user.pdf}
           doc= {user.doc}
           skills={user.skills}
+          allFiles={user.allFiles}
         />
       ))}
       <img src={add} alt="" style={{width:"50px",height:"50px",position:"relative" ,top:"150px" ,left:"140px"}} onClick={()=>(newForm())}/>
